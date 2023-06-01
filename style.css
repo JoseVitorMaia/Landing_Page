@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body,html {
+    background-color: rgb(15, 15, 15);  
+}
+
+main {
+    width: 95vw;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Primeira pagina - Apresentação */
+#apresentacao {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    background-image: url(imagens/fundo1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#apresentacao header {
+    background-color: rgba(128, 128, 128, 0.829);
+    height: 90px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.219);
+    overflow: hidden;
+}
+
+#apresentacao header h2 {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Aoboshi One', serif;
+}
+
+#apresentacao header ul {
+    display: flex;
+    list-style: none;
+}
+
+#apresentacao header ul li {
+    padding: 10px;
+    border-radius: 5px 5px 0px 0px;
+    font-family: 'Nova Flat', cursive;
+}
+
+#apresentacao header ul li:hover {
+    background-color: rgb(102, 102, 102);
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+#apresentacao a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#imagensApresentacao {
+    text-align: center;
+    position: relative;
+    bottom: -60%;
+}
+
+#imagensApresentacao img {
+    max-width: 200px;
+    width: 17vw;
+    height: 20vh;
+    border: 10px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.534);
+    margin: 20px;
+}
+
+#imagensApresentacao img:hover {
+    transform: scale(1.4);
+    transition: 1s;
+}
+
+/* Segunda pagina - Agendamento */
+
+#agendar {
+    background-color: white;
+    width: 100%;
+    height: 40vh;
+    background-image: url(imagens/fundo2.jpg);
+    background-size: cover;
+}
+
+#agendar h2 {
+    text-align: center;
+    padding: 15px;
+    background-image: linear-gradient(to right,#80808033,#ffffff50,#80808033);
+    color: white;
+    font-family: 'Aoboshi One', serif;
+}
+
+#agendar form {
+    text-align: center;
+    padding: 10px;
+    margin-top: 60px;
+}
+
+#agendar form input {
+    border: none;
+    padding: 4px;
+    border-bottom: 1px solid grey;
+    background-color: rgba(255, 255, 255, 0.700);
+    transform: translateY(-1px);
+}
+
+#agendar form label {
+    font-weight: bold;
+    color: black;
+    font-family: 'Nova Flat', cursive;
+    background-color: rgba(128, 128, 128, 0.432);
+    padding: 3px;
+    
+}
+
+#agendar form input:focus {
+    outline: 0;
+}
+
+#agendar form button {
+    border: none;
+    width: 120px;
+    height: 50px;
+    margin-top: 30px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.37);
+    background-color: rgba(255, 255, 255, 0.733);
+    font-size: 20px;
+    font-family: 'Aoboshi One', serif;
+}
+
+#agendar form button:hover {
+    cursor: pointer;
+    background-color: rgba(128, 128, 128, 0.562);
+    color: white;
+    transition: 1.0s;
+}
+
+
+#contatos {
+    background-color: black;
+    width: 100%;
+    height: 30vh;
+    color: rgba(255, 255, 255, 0.815);
+    display: flex;
+    justify-content: space-around;
+}
+
+#contatos ul {
+    list-style: none;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+#contatos ul li {
+    font-family: 'Nova Flat', cursive;
+    padding: 3px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.192);
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+iframe {
+    display: block;
+    width: 100%;
+}
+
+
+footer img {
+    width: 30px;
+    padding-left: 10px;
+    padding-top: 10px;
+    position: relative;
+    left: 200px;
+}
+
+footer img:hover {
+    transform: scale(1.3);
+    transition: .5s;
+}
+
+

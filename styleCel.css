@@ -1,0 +1,22 @@
+#img3 {
+    display: none;
+}
+
+#apresentacao {
+    background-image: url(imagens/fundo1menor.JPG);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#agendar form {
+    display: grid;
+}
+
+#contatos {
+    font-size: .70em;
+}
+
+
+footer img {
+    left: 20px;
+}

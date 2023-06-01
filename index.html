@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleTablet.css" media="screen and (max-width: 1200px)">
+    <link rel="stylesheet" href="styleCel.css" media="screen and (max-width: 850px)">
+
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aoboshi+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Flat&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <section id="apresentacao">
+            <header>
+                <h2>Barbearia Dois Irmãos</h2>
+                <ul>
+                    <a href="#apresentacao">
+                        <li>Home</li>
+                    </a>
+                    <a href="#agendar">
+                        <li>Agendar</li>
+                    </a>
+                    <a href="#contatos">
+                        <li>Contatos</li>
+                    </a>
+                </ul>
+            </header>
+            <article id="imagensApresentacao">
+                <img src="imagens/img1.jpg" alt="img1">
+                <img src="imagens/img2.jpg" alt="img2">
+                <img src="imagens/img3.jpg" alt="img3" id="img3">
+                <img src="imagens/img4.jpg" alt="img4" id="img4">
+            </article>
+        </section>
+        <section id="agendar">
+            <h2>Agendar</h2>
+            <form>
+                <label for="nome">Nome: </label>
+                <input type="text" name="nome" id="nome" placeholder="Nome completo">
+                <label for="horario">Horário : </label>
+                <input type="datetime-local" name="horario" id="horario">
+                <label for="telefone">Telefone : </label>
+                <input type="number" name="telefone" id="telefone" placeholder="Telefone para contato">
+                <p><button>Agendar</button></p>
+            </form>
+        </section>
+        <section id="contatos">
+            <ul>
+                <li>Contatos</li>
+                <li>31 34353839</li>
+                <li>31 34353839</li>
+                <li>31 34353839</li>
+            </ul>
+            <ul>
+                <li>Endereços</li>
+                <li>Rua Edgard Cavaleiro n 999 Cep: 31 999 999</li>
+                <li>Rua Edgard Cavaleiro n 999 Cep: 31 999 999</li>
+            </ul>
+        </section>
+        <footer>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.0309671884997!2d-43.9205025!3d-19.838642599999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa685347e301b0b%3A0x516ed982e616923a!2sR.%20Furquim%20Werneck%20-%20Norte%2C%20Belo%20Horizonte%20-%20MG%2C%2031840-050!5e0!3m2!1spt-BR!2sbr!4v1685642051084!5m2!1spt-BR!2sbr" width="940" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p> &reg; Barbearia Dois Irmãos
+            <abbr title="Facebook Dois Irmãos"><a href="#"><img src="imagens/facebook.png" alt="Facebook"></a></abbr>
+            <abbr title="Instagram Dois Irmãos"><a href="#"><img src="imagens/instagram.png" alt="Instagram"></a></abbr>
+            <abbr title="Whatsapp Dois Irmãos"><a href="#"><img src="imagens/whatsapp.png" alt="Whatsapp"></a></abbr>
+            </p>
+        </footer>
+    </main>
+</body>
+</html>
