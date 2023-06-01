@@ -8,12 +8,27 @@
     background-repeat: no-repeat;
 }
 
+#imagensApresentacao {
+    bottom: -55%;
+}
+
+#imagensApresentacao img {
+    max-width: 200px;
+    width: 30vw;
+    height: 20vh;
+    margin: 20px;
+}
+
+#agendar {
+    height: 100%;
+}
+
 #agendar form {
     display: grid;
 }
 
 #contatos {
-    font-size: .70em;
+    font-size: .5em;
 }
 
 
