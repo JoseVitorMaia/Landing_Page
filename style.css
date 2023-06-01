@@ -54,6 +54,9 @@ main {
     transition: .5s;
 }
 
+#apresentacao a {
+    color: black;
+}
 
 #apresentacao a:visited {
     color: black;
