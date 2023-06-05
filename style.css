@@ -83,6 +83,7 @@ main {
     transition: 1s;
 }
 
+
 /* Segunda pagina - Agendamento */
 
 #agendar {
@@ -194,4 +195,39 @@ footer img:hover {
     transition: .5s;
 }
 
+.confirm {
+    min-width: 250px;
+    max-width: 350px;
+    height: 100px;
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.753);
+    font-family: 'Nova Flat', cursive;
+    background-color: #efefef;
+    border: 3px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    top: -35%;
+    transform: translate(-50%,-50%);
+}
+
+.btn_confirm {
+    width: 80px;
+    height: 30px;
+    border: none;
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.719);
+    position: absolute;
+    bottom: 5%;
+    left: 38%;
+}
+
+.btn_confirm:hover {
+    cursor: pointer;
+    background-color: lightgrey;
+    color: black;
+    transition: .5s;
+}
 

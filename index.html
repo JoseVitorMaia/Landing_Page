@@ -48,10 +48,10 @@
                 <label for="nome">Nome: </label>
                 <input type="text" name="nome" id="nome" placeholder="Nome completo">
                 <label for="horario">Horário : </label>
-                <input type="datetime-local" name="horario" id="horario">
+                <input type="datetime-local" name="horario" id="horario"  pattern="[0-9]{4}-[0-9]{2}-[0-9]{2} as [0-9]{2}:[0-9]{2}">
                 <label for="telefone">Telefone : </label>
                 <input type="number" name="telefone" id="telefone" placeholder="Telefone para contato">
-                <p><button>Agendar</button></p>
+                <p><button onclick="agendar()">Agendar</button></p>
             </form>
         </section>
         <section id="contatos">
@@ -76,5 +76,44 @@
             </p>
         </footer>
     </main>
+
+
+    <script>
+        function agendar() {
+            event.preventDefault()
+            let nome = document.querySelector('#nome')
+            let horario = document.querySelector('#horario')
+            let telefone = document.querySelector('#telefone')
+            let agendar = document.querySelector('#agendar')
+
+            let confirm = document.createElement('div')
+            confirm.setAttribute("class","confirm")
+            confirm.append(`Nome: ${nome.value} - Horario: ${horario.value} - Telefone: ${telefone.value}`)
+
+            let btn_confirm = document.createElement('button')
+            btn_confirm.innerText = "Agendado!"
+            btn_confirm.setAttribute("class","btn_confirm")
+            btn_confirm.setAttribute("onclick","confirmar()")
+
+
+            confirm.appendChild(btn_confirm)
+            agendar.append(confirm)
+
+
+            console.log(`Nome: ${nome.value} - Horario: ${horario.value} - Telefone: ${telefone.value}`)
+
+
+        }
+
+        function confirmar() {
+            let confirm = document.querySelector('.confirm').remove()
+            let btn_confirm = document.querySelector('.btn_confirm')
+
+            
+
+
+            console.log('agendoooooooou')
+        }
+    </script>
 </body>
 </html>
